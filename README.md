@@ -1,5 +1,9 @@
 # Zero Lero — STE100 + Linguagem Simples (PT-BR)
 
+<div align="center">
+  <img src="assets/banner.svg" alt="Banner do projeto Zero Lero: reescrita de documentação técnica em linguagem simples" width="100%">
+</div>
+
 Pacote de instruções para transformar documentação técnica, um texto avulso ou a resposta anterior de um assistente em uma versão clara, objetiva e utilizável. O uso principal é **documentação técnica**; o pacote também cobre comunicação ao cidadão e resumos explicativos de textos jurídicos. Combina:
 
 - princípios do **ASD-STE100 Issue 9** (Simplified Technical English), adaptados ao português do Brasil;
