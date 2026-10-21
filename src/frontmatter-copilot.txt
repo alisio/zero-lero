@@ -1,0 +1,6 @@
+---
+name: ste100-ptbr
+description: 'Reescreve ou audita documentação técnica e textos em PT-BR com os princípios do ASD-STE100 e as técnicas da Lei nº 15.263/2025.'
+argument-hint: '[texto, arquivo ou "resposta anterior"]'
+agent: 'agent'
+---
