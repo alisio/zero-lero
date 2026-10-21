@@ -1,5 +1,5 @@
 ---
-name: ste100-ptbr
+name: zero-lero
 description: Reescreve, audita e revisa documentação técnica e textos em português do Brasil para seguir os princípios do ASD-STE100 (Simplified Technical English) e as técnicas da Lei nº 15.263/2025 (Linguagem Simples). Use quando o usuário pedir para simplificar, clarear, encurtar, revisar ou adaptar documentação técnica, um texto ou a resposta anterior, para linguagem simples, STE100, comunicação ao cidadão, acessibilidade ou linguagem inclusiva. Use para textos, não para revisão de código.
 license: MIT
 compatibility: OpenCode, Claude Code e GitHub Copilot (prompt adaptado)

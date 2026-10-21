@@ -1,4 +1,4 @@
-# STE100 + Linguagem Simples (PT-BR)
+# Zero Lero — STE100 + Linguagem Simples (PT-BR)
 
 Pacote de instruções para transformar documentação técnica, um texto avulso ou a resposta anterior de um assistente em uma versão clara, objetiva e utilizável. O uso principal é **documentação técnica**; o pacote também cobre comunicação ao cidadão e resumos explicativos de textos jurídicos. Combina:
 
@@ -12,7 +12,7 @@ O pacote funciona em **OpenCode**, **Claude Code** e **GitHub Copilot** (VS Code
 ## O que você recebe
 
 ```text
-ste100-ptbr/
+zero-lero/
 ├── README.md
 ├── LICENSE
 ├── build.mjs
@@ -27,7 +27,7 @@ ste100-ptbr/
 │       ├── exemplos.md
 │       └── termbase.md
 ├── dist/
-│   ├── skill/ste100-ptbr/         # pronto para OpenCode e Claude
+│   ├── skill/zero-lero/           # pronto para OpenCode e Claude
 │   ├── copilot/                   # pronto para VS Code
 │   └── portable/                  # prompt para qualquer chat
 ├── tools/
@@ -63,14 +63,14 @@ Global:
 
 ```bash
 mkdir -p ~/.config/opencode/skills
-cp -R dist/skill/ste100-ptbr ~/.config/opencode/skills/
+cp -R dist/skill/zero-lero ~/.config/opencode/skills/
 ```
 
 No projeto:
 
 ```bash
 mkdir -p .opencode/skills
-cp -R /caminho/para/ste100-ptbr/dist/skill/ste100-ptbr .opencode/skills/
+cp -R /caminho/para/zero-lero/dist/skill/zero-lero .opencode/skills/
 ```
 
 O OpenCode também descobre skills em `.claude/skills` e `~/.claude/skills`.
@@ -81,38 +81,38 @@ Global:
 
 ```bash
 mkdir -p ~/.claude/skills
-cp -R dist/skill/ste100-ptbr ~/.claude/skills/
+cp -R dist/skill/zero-lero ~/.claude/skills/
 ```
 
 No projeto:
 
 ```bash
 mkdir -p .claude/skills
-cp -R /caminho/para/ste100-ptbr/dist/skill/ste100-ptbr .claude/skills/
+cp -R /caminho/para/zero-lero/dist/skill/zero-lero .claude/skills/
 ```
 
 ### GitHub Copilot no VS Code
 
 ```bash
 mkdir -p .github/prompts
-cp dist/copilot/ste100-ptbr.prompt.md .github/prompts/
+cp dist/copilot/zero-lero.prompt.md .github/prompts/
 cp -R dist/copilot/references .github/prompts/references
 ```
 
-No VS Code, selecione o harness **Local** no chat e digite `/ste100-ptbr`.
+No VS Code, selecione o harness **Local** no chat e digite `/zero-lero`.
 
-O Copilot também aceita o arquivo como instrução personalizada. Para isso, copie o conteúdo para `.github/instructions/ste100-ptbr.instructions.md` e adicione `applyTo: "**/*.md"` no frontmatter. Use essa opção apenas se você quiser aplicação automática; o prompt é melhor para invocação sob demanda.
+O Copilot também aceita o arquivo como instrução personalizada. Para isso, copie o conteúdo para `.github/instructions/zero-lero.instructions.md` e adicione `applyTo: "**/*.md"` no frontmatter. Use essa opção apenas se você quiser aplicação automática; o prompt é melhor para invocação sob demanda.
 
 ### Qualquer chat
 
-Copie o conteúdo de `dist/portable/ste100-ptbr.md` e cole no sistema, nas instruções do projeto ou na primeira mensagem.
+Copie o conteúdo de `dist/portable/zero-lero.md` e cole no sistema, nas instruções do projeto ou na primeira mensagem.
 
 ## Como usar
 
 ### Reescrever um texto
 
 ```text
-/ste100-ptbr
+/zero-lero
 
 Reescreva o texto abaixo para um cidadão não especialista.
 Preserve prazos, valores e condições.
@@ -123,7 +123,7 @@ Preserve prazos, valores e condições.
 ### Reescrever a resposta anterior
 
 ```text
-/ste100-ptbr Reescreva a resposta anterior em linguagem simples.
+/zero-lero Reescreva a resposta anterior em linguagem simples.
 ```
 
 Se houver mais de uma resposta anterior possível, o agente pergunta qual usar.
@@ -131,26 +131,26 @@ Se houver mais de uma resposta anterior possível, o agente pergunta qual usar.
 ### Auditar sem reescrever
 
 ```text
-/ste100-ptbr Audite o texto abaixo. Não reescreva ainda.
+/zero-lero Audite o texto abaixo. Não reescreva ainda.
 ```
 
 ### Texto jurídico
 
 ```text
-/ste100-ptbr Prepare um resumo explicativo do artigo abaixo.
+/zero-lero Prepare um resumo explicativo do artigo abaixo.
 Não altere o texto normativo. Rotule o resumo como sem valor normativo.
 ```
 
 ### Comparar
 
 ```text
-/ste100-ptbr Compare o original e a versão revisada, com o motivo de cada mudança.
+/zero-lero Compare o original e a versão revisada, com o motivo de cada mudança.
 ```
 
 ### Bilíngue
 
 ```text
-/ste100-ptbr Produza uma versão EN-STE100 e uma versão PT-BR a partir do mesmo conteúdo.
+/zero-lero Produza uma versão EN-STE100 e uma versão PT-BR a partir do mesmo conteúdo.
 Não traduza literalmente. Compare fatos, números, condições e termos.
 ```
 
@@ -236,9 +236,9 @@ node build.mjs
 
 O build gera:
 
-- `dist/skill/ste100-ptbr/SKILL.md` + `references/`;
-- `dist/copilot/ste100-ptbr.prompt.md` + `references/`;
-- `dist/portable/ste100-ptbr.md`.
+- `dist/skill/zero-lero/SKILL.md` + `references/`;
+- `dist/copilot/zero-lero.prompt.md` + `references/`;
+- `dist/portable/zero-lero.md`.
 
 A fonte canônica é `src/prompt.md`. Não edite os arquivos em `dist/` à mão: eles são regenerados.
 

@@ -1,4 +1,4 @@
-# Editor de Linguagem Simples e STE100 (PT-BR)
+# Zero Lero — Editor de Linguagem Simples e STE100 (PT-BR)
 
 ## 1. Papel
 
